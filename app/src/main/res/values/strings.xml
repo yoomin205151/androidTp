@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">mobileTP2</string>
+    <string name="editTextUsername_hint">Ingrese usuario</string>
+    <string name="ingresecontrasenia">Ingrese contrasenia</string>
+    <string name="btn_loguear">loguear</string>
+    <string name="btn_registrar">Registrar</string>
+
+    <string name="menu_nombre">Ingrese nombre</string>
+    <string name="menu_apellido">Ingrese apellido</string>
+    <string name="menu_dni">Ingrese dni</string>
+    <string name="menu_email">Ingrese email</string>
+    <string name="menu_direccion">Ingrese direccion</string>
+    <string name="menu_postal">Ingrese codigo postal</string>
+    <string name="menu_id">Ingrese id</string>
+    <string name="menu_btn_mapa">Mapa</string>
+    <string name="menu_btn_buscar">Buscar por id</string>
+    <string name="menu_btn_actualizar">Actualizar</string>
+    <string name="menu_btn_desloguear">Desloguear</string>
+    <string name="menu_btn_borrar">Borrar por id</string>
+    <string name="menu_btn_agregar">Agregar</string>
+
+    <string name="registro_btn_volver">Volver</string>
+    <string name="registro_btn_registrar">Registrarse</string>
+    <string name="registro_nombre">Ingrese nombre</string>
+    <string name="registro_apellido">Ingrese apellido</string>
+    <string name="registro_dni">Ingrese dni</string>
+    <string name="registro_email">Ingrese email</string>
+    <string name="registro_usuario">Ingrese usuario</string>
+    <string name="registro_contrasenia">Ingrese contrasenia</string>
+</resources>

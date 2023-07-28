@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ActivityMenu">
+
+        <EditText
+            android:id="@+id/edt_idm"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="22dp"
+            android:ems="10"
+            android:hint="@string/menu_id"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/btn_buscarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mapa" />
+
+        <EditText
+            android:id="@+id/edt_apellidom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="109dp"
+            android:ems="10"
+            android:hint="@string/menu_apellido"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/edt_direccionm"
+            app:layout_constraintEnd_toStartOf="@+id/edt_dnim"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nombrem" />
+
+        <EditText
+            android:id="@+id/edt_dnim"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="@string/menu_dni"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/edt_emailm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edt_apellidom"
+            app:layout_constraintTop_toBottomOf="@+id/btn_desloguear" />
+
+        <EditText
+            android:id="@+id/edt_emailm"
+            android:layout_width="286dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="@string/menu_email"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/btn_mapa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_dnim" />
+
+        <EditText
+            android:id="@+id/edt_direccionm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="29dp"
+            android:ems="10"
+            android:hint="@string/menu_direccion"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/edt_codigopostalm"
+            app:layout_constraintEnd_toStartOf="@+id/btn_mapa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_apellidom" />
+
+        <EditText
+            android:id="@+id/edt_codigopostalm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="116dp"
+            android:ems="10"
+            android:hint="@string/menu_postal"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/btn_agregarm"
+            app:layout_constraintEnd_toStartOf="@+id/btn_buscarm"
+            app:layout_constraintStart_toStartOf="@+id/edt_direccionm"
+            app:layout_constraintTop_toBottomOf="@+id/edt_direccionm" />
+
+        <EditText
+            android:id="@+id/edt_nombrem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:hint="@string/menu_nombre"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/edt_apellidom"
+            app:layout_constraintEnd_toStartOf="@+id/btn_desloguear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_agregarm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/menu_btn_agregar"
+            app:layout_constraintBottom_toTopOf="@+id/btn_eliminarm"
+            app:layout_constraintEnd_toStartOf="@+id/btn_buscarm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_codigopostalm" />
+
+        <Button
+            android:id="@+id/btn_buscarm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/menu_btn_buscar"
+            app:layout_constraintBottom_toTopOf="@+id/btn_actualizarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_agregarm"
+            app:layout_constraintTop_toBottomOf="@+id/edt_idm" />
+
+        <Button
+            android:id="@+id/btn_eliminarm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/menu_btn_borrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_actualizarm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_agregarm" />
+
+        <Button
+            android:id="@+id/btn_actualizarm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/menu_btn_actualizar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_eliminarm"
+            app:layout_constraintTop_toBottomOf="@+id/btn_buscarm" />
+
+        <Button
+            android:id="@+id/btn_desloguear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/menu_btn_desloguear"
+            app:layout_constraintBottom_toTopOf="@+id/edt_dnim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edt_nombrem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_mapa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="120dp"
+            android:onClick="buscarmapa"
+            android:text="@string/menu_btn_mapa"
+            app:layout_constraintBottom_toTopOf="@+id/edt_idm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edt_direccionm"
+            app:layout_constraintTop_toBottomOf="@+id/edt_emailm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
